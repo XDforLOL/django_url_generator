@@ -27,7 +27,8 @@ in a python venv with a django environment installed
     ```
 
 2. **Build and run the Docker containers:**
-    ```sh
+   After downloading and installing docker run this command to build the Django server and DB
+    ```
     docker-compose up --build
     ```
 
@@ -45,17 +46,15 @@ in a python venv with a django environment installed
     ```
 
 3. **Redirect to the long URL:**
-    Access the short URL in your browser, e.g., `http://localhost:8000/s/abc123`.
+    Access the short URL in your browser, e.g., `http://localhost:8000/s/<result from url creation>`.
 
 ## Running Tests
-
-1. **Run the tests:**
-    ```sh
-    docker-compose run web python manage.py test
-    ```
+    The Tests run as soon as you build the docker compose file
 
 ## Project Structure
 
+- `django_util`: Has two functions which provide utility to other functions
+    A hashing function whcih shorthens the urls, and a URL validators
 - `Dockerfile`: Defines the Docker image for the Django application.
 - `docker-compose.yml`: Defines the Docker services for the project.
 - `settings.py`: Django settings file, including database configuration .
