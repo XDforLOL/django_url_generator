@@ -22,8 +22,8 @@ in a python venv with a django environment installed
 
 1. **Clone the repository:**
     ```sh
-    git clone <repository-url>
-    cd <repository-directory>
+    git clone git@github.com:XDforLOL/django_url_generator.git
+    cd pcentra_url_generator
     ```
 
 2. **Build and run the Docker containers:**
